@@ -1,0 +1,108 @@
+<hmtl>
+	<head>
+        <style>
+        	input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+table {
+  width: 90%;
+}
+
+th {
+  height: 50px;
+}
+        	input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=file] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+            div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+        </style>
+    </head>
+<body>
+	<div>
+	<center>
+		<table border="2">
+			<tr>
+				<td>
+<form action="resumeupdate.php" method="post" enctype="multipart/form-data">
+	<table>
+			<tr>
+				<td>
+					name:
+				</td>
+				<td>
+					<input type="text" name="name" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					resume:
+				</td>
+				<td align="center">
+					<input type="file" name="file" size="50" accept=".pdf" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="submit" />
+				</td>
+			</tr>
+		</table>
+</form>
+</td>
+<td>
+	<form action="searchdb.php" method="post" enctype="multipart/form-data">
+<table>
+	<tr>
+		<td>
+			email to search:
+		</td>
+		<td>
+			<input type="text" name="email" id="email">
+		</td>
+	</tr>
+	<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="submit" />
+				</td>
+			</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
